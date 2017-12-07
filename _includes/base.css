@@ -1,11 +1,41 @@
 body {
   background-color: #f1f1f1;
+  padding: 0;
+  margin: 0;
 }
 
 article.post {
   background-color: #fff;
-  width: 800px;
-  padding: 2rem;
+  width: 840px;
+  padding: 1.5rem 2rem;
   margin-right: auto;
   margin-left: auto;
+  margin-top: 1.5rem;
+  box-sizing: border-box;
+}
+
+article h1 {
+  margin-top: 0;
+}
+
+nav {
+  background-color: #149c82;
+  color: #fff;
+}
+
+nav .site-title {
+  font-size: 1.2rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-container {
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 840px;
 }
