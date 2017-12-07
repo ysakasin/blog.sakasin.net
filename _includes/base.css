@@ -1,3 +1,11 @@
 body {
-  background-color: #eee;
+  background-color: #f1f1f1;
+}
+
+article.post {
+  background-color: #fff;
+  width: 800px;
+  padding: 2rem;
+  margin-right: auto;
+  margin-left: auto;
 }
