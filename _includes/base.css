@@ -6,7 +6,7 @@ body {
 
 article.post {
   background-color: #fff;
-  width: 840px;
+  max-width: 800px;
   padding: 1.5rem 2rem;
   margin-right: auto;
   margin-left: auto;
@@ -14,8 +14,30 @@ article.post {
   box-sizing: border-box;
 }
 
+@media (max-width: 800px) {
+  article.post {
+    margin-right: 1rem;
+    margin-left: 1rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+  nav .site-title {
+    padding-left: 1rem;
+  }
+}
+
 article h1 {
   margin-top: 0;
+  margin-bottom: 0.3rem;
+}
+
+.post-header p {
+  margin: 0;
+}
+
+header.post-header {
+  margin-bottom: 2rem;
 }
 
 nav {
@@ -37,5 +59,5 @@ nav a {
   padding-bottom: 0.3rem;
   margin-left: auto;
   margin-right: auto;
-  width: 840px;
+  max-width: 800px;
 }
