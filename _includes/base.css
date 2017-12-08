@@ -35,6 +35,11 @@ article.post {
 article h1 {
   margin-top: 0;
   margin-bottom: 0.3rem;
+  font-size: 2rem;
+}
+
+article h2 {
+  border-bottom: 1px solid #ddd
 }
 
 .post-header p {
@@ -42,7 +47,7 @@ article h1 {
 }
 
 header.post-header {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 nav {
@@ -85,8 +90,9 @@ footer p {
 }
 
 code.highlighter-rouge {
-  background-color: #f6f8fa;
+  background-color: #eee;
   padding: 0.2em 0.4em;
   font-size: 85%;
   border-radius: 3px;
+  font-weight: bold;
 }
