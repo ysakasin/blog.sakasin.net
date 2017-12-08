@@ -1,7 +1,12 @@
+html {
+  font-size: 16px;
+}
+
 body {
   background-color: #f1f1f1;
   padding: 0;
   margin: 0;
+  font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,"游ゴシック",YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif;
 }
 
 article.post {
@@ -54,10 +59,34 @@ nav a {
   text-decoration: none;
 }
 
-.nav-container {
+.nav-container, footer p {
   padding-top: 0.3rem;
   padding-bottom: 0.3rem;
   margin-left: auto;
   margin-right: auto;
   max-width: 800px;
+}
+
+footer p {
+  padding-right: 1rem;
+  padding-left: 1rem;
+  box-sizing: border-box;
+  color: #555;
+}
+
+.highlight {
+  margin: 0;
+}
+
+.highlight pre {
+  background-color: #f6f8fa;
+  padding: 1em;
+  border-radius: 3px;
+}
+
+code.highlighter-rouge {
+  background-color: #f6f8fa;
+  padding: 0.2em 0.4em;
+  font-size: 85%;
+  border-radius: 3px;
 }
