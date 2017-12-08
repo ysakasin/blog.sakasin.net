@@ -59,7 +59,7 @@ cabal install pandoc
 
 OSXでTeXをインストールするのに便利なMacTeXから、最小構成の[BasicTeX](http://www.tug.org/mactex/morepackages.html)をインストールします。
 
-その後に`tlmgr`を使って日中漢の言語パッケージを導入します。詳しくは上記の[参考サイト](http://k1low.hatenablog.com/entry/2014/02/16/205839)を確認してください。
+その後に`tlmgr`を使って日中漢の言語パッケージを導入します。詳しくは上記の[参考サイト](http://k1low.hatenablog.com/entry/2014/02/16/205839)を確認してください。
 
 
 ## 使う
