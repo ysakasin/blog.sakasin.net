@@ -15,8 +15,12 @@
     {{ content }}
 
     <footer>
-      <p>&copy; 2017 酒田　シンジ</p>
+      <div class="footer-sns">
+        <a href="https://twitter.com/{{ site.twitter }}" target="_blank" rel="noopener noreferrer">{% include icon-twitter.svg %}</a>
+        <a href="https://github.com/{{ site.github }}" target="_blank" rel="noopener noreferrer">{% include icon-github.svg %}</a>
+        <a href="/feed.xml" target="_blank" rel="noopener noreferrer">{% include icon-rss.svg %}</a>
+      </div>
+      <p class="copylight">&copy; 2017 <a href="https://sakasin.net" target="_blank" rel="noopener noreferrer">酒田　シンジ</a></p>
     </footer>
   </body>
-
 </html>

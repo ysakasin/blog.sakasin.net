@@ -9,7 +9,7 @@ body {
   font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,"游ゴシック",YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif;
 }
 
-article.post {
+article.post, .home {
   background-color: #fff;
   max-width: 800px;
   padding: 1.5rem 2rem;
@@ -20,7 +20,7 @@ article.post {
 }
 
 @media (max-width: 800px) {
-  article.post {
+  article.post, .home {
     margin-right: 1rem;
     margin-left: 1rem;
     padding-right: 1rem;
@@ -32,7 +32,7 @@ article.post {
   }
 }
 
-article h1 {
+h1 {
   margin-top: 0;
   margin-bottom: 0.3rem;
   font-size: 2rem;
@@ -64,7 +64,7 @@ nav a {
   text-decoration: none;
 }
 
-.nav-container, footer p {
+.nav-container {
   padding-top: 0.3rem;
   padding-bottom: 0.3rem;
   margin-left: auto;
@@ -72,11 +72,28 @@ nav a {
   max-width: 800px;
 }
 
-footer p {
-  padding-right: 1rem;
-  padding-left: 1rem;
-  box-sizing: border-box;
+footer {
+  margin-top: 24px;
+  text-align: center;
   color: #555;
+  text-decoration: none;
+}
+
+.footer-sns a {
+  margin: 0 12px;
+  fill: #555;
+}
+
+.footer-sns a:hover {
+  fill: #888;
+}
+
+.copylight a {
+  color: #555;
+}
+
+.copylight a:hover {
+  color: #888;
 }
 
 .highlight {
