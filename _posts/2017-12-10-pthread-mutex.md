@@ -1,7 +1,7 @@
 ---
 layout: post
 title: なぜpthread_mutexは機能するのか？
-date: 2017-12-10 5:00:00 +0900
+date: 2017-12-10 14:00:00 +0900
 slug: pthread-mutex-with-glibc
 description: なぜpthread mutexで排他処理ができるのか。その謎を明らかにすべく我々はglibcの奥地へと向かった。
 ---
