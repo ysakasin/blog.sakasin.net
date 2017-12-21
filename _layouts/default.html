@@ -17,4 +17,8 @@
       <p class="copylight">&copy; 2017 <a href="https://sakasin.net" target="_blank" rel="noopener noreferrer">酒田　シンジ</a></p>
     </footer>
   </body>
+
+{% if jekyll.environment == 'production' %}
+{% include ga.html %}
+{% endif %}
 </html>
