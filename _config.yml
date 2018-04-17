@@ -4,8 +4,8 @@ description: >-
   酒田　シンジが気になったことをテキトーに書くブログ
 baseurl: "/blog" # the subpath of your site, e.g. /blog
 url: "https://sakasin.net"
-twitter: NKMR6194
-github: NKMR6194
+twitter: ysakasin
+github: ysakasin
 permalink: /:title
 
 # Build settings
