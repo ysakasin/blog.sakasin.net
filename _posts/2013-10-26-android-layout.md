@@ -22,7 +22,7 @@ Androidアプリ開発をはじめたので、個人的なTipsを随時載せて
 まず、具体的に例を示します。以下のxmlコードは２×３のボタンを画面いっぱいに並べる場合です。
 画像は、それをeclipce環境下のグラフィカルレイアウトで仮想的に並べた様子です。
 
-<script src="https://gist.github.com/NKMR6194/cefade2e7936fedcf8fb.js"></script>
+<script src="https://gist.github.com/ysakasin/cefade2e7936fedcf8fb.js"></script>
 
 ![Android_Button_Sample](/uploads/Android_Button_Sample.png)
 

@@ -17,7 +17,7 @@ description: なぜpthread mutexで排他処理ができるのか。その謎を
 とはいえ、pthread_mutexだって人が作ったものだから、理解さえすれば、自前で正しい排他制御をできるはず。
 本エントリでは自前の排他制御をどう実現するかというのを念頭において、pthread_mutexがどうして排他制御をできるのか、glibcを覗きながら理解を深めてゆく。
 
-> __*なぜpthread_mutexで排他処理ができるのか？*__  
+> __*なぜpthread_mutexで排他処理ができるのか？*__
 > __*その謎を明らかにすべく我々はglibcの奥地へと向かった。*__
 
 
@@ -116,9 +116,9 @@ pthreadとはスレッドに関するPOSIX標準である。
 pthreadにはいくつかの実装があるが、今回は最もポピュラーだと思われるglibcの実装を見ることにする。
 下記URLはGitHubに置いたミラーリポジトリだ。
 
-[https://github.com/NKMR6194/glibc](https://github.com/NKMR6194/glibc)
+[https://github.com/ysakasin/glibc](https://github.com/ysakasin/glibc)
 
-pthreadの実装は [/nptl](https://github.com/NKMR6194/glibc/tree/master/nptl) の `pthread_*.c` にされている。今回はpthread_mutexを知りたいので、 [/ntpl/pthread_mutex_lock.c](https://github.com/NKMR6194/glibc/blob/master/nptl/pthread_mutex_lock.c)を読んでみる。
+pthreadの実装は [/nptl](https://github.com/ysakasin/glibc/tree/master/nptl) の `pthread_*.c` にされている。今回はpthread_mutexを知りたいので、 [/ntpl/pthread_mutex_lock.c](https://github.com/ysakasin/glibc/blob/master/nptl/pthread_mutex_lock.c)を読んでみる。
 
 
 ### 1. \__pthread_mutex_lock
@@ -244,12 +244,12 @@ __lll_lock_wait_private (int *futex)
 
 まず、コンパイラによる過度な最適化の問題に対して、**glibcはインラインアセンブラを利用することで解決している**ということがわかった。
 
-[def-mutex-lock]:https://github.com/NKMR6194/glibc/blob/master/nptl/pthread_mutex_lock.c#L63
-[detail-mutex-lock]:https://github.com/NKMR6194/glibc/blob/master/nptl/pthread_mutex_lock.c#L78
-[def-lll-mutex-lock]:https://github.com/NKMR6194/glibc/blob/master/nptl/pthread_mutex_lock.c#L42
-[def-lll-lock]:https://github.com/NKMR6194/glibc/blob/95ccb619f553c130dde7b51098d69132547f8a90/sysdeps/unix/sysv/linux/x86_64/lowlevellock.h#L108
-[def-lll-lock-wait]:https://github.com/NKMR6194/glibc/blob/95ccb619f553c130dde7b51098d69132547f8a90/nptl/lowlevellock.c#L27
-[def-exchange]:https://github.com/NKMR6194/glibc/blob/95ccb619f553c130dde7b51098d69132547f8a90/sysdeps/x86_64/atomic-machine.h#L118
+[def-mutex-lock]:https://github.com/ysakasin/glibc/blob/master/nptl/pthread_mutex_lock.c#L63
+[detail-mutex-lock]:https://github.com/ysakasin/glibc/blob/master/nptl/pthread_mutex_lock.c#L78
+[def-lll-mutex-lock]:https://github.com/ysakasin/glibc/blob/master/nptl/pthread_mutex_lock.c#L42
+[def-lll-lock]:https://github.com/ysakasin/glibc/blob/95ccb619f553c130dde7b51098d69132547f8a90/sysdeps/unix/sysv/linux/x86_64/lowlevellock.h#L108
+[def-lll-lock-wait]:https://github.com/ysakasin/glibc/blob/95ccb619f553c130dde7b51098d69132547f8a90/nptl/lowlevellock.c#L27
+[def-exchange]:https://github.com/ysakasin/glibc/blob/95ccb619f553c130dde7b51098d69132547f8a90/sysdeps/x86_64/atomic-machine.h#L118
 
 
 ## xchg
@@ -340,8 +340,3 @@ glibcにおけるpthread_mutexの実装ではインラインアセンブラでxc
 間違いを見つけたら、私になんらかの方法で指摘をいただけるとありがたい。
 
 [明日12/11](https://adventar.org/calendars/2199#list-2017-12-11)は、さんだーくんの担当です。
-
-
-
-
-

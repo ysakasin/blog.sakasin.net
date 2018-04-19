@@ -38,7 +38,7 @@ pLaTeXなどでも日本語には対応していますが、LuaLaTeXは直接pdf
 
 OSXでの導入方法を紹介します。
 
-参考にしたサイトがあるので、リンクを貼っておきます。  
+参考にしたサイトがあるので、リンクを貼っておきます。
 [MarkdownからWordやPDF生成ができるようにする (またはPandoc環境の構築方法)](http://k1low.hatenablog.com/entry/2014/02/16/205839)
 
 ### Pandoc
@@ -72,7 +72,7 @@ pandoc report.md -o report.pdf -V documentclass=ltjsarticle --latex-engine=luala
 
 これを毎回入力するのは面倒くさいので、私はシェル関数を書いて省略しています。
 
-<script src="https://gist.github.com/NKMR6194/b02c8cc80f8c424c27ee.js"></script>
+<script src="https://gist.github.com/ysakasin/b02c8cc80f8c424c27ee.js"></script>
 
 `.bachrc`などに追記してやるといい感じになります。ファイルの拡張子は固定なので事前に関数内に書いてしまっているのと、無用な上書き防止のために出力ファイル名をその都度指定するようにしています。これを適用すれば、以下のようにしてPDFを生成することができます。
 
@@ -115,4 +115,3 @@ Wordであればcoinsのマシンにも入っていますし、色々な場所�
 ## まとめ
 
 つくばに来る前はMS Word常用者で、高専の実験レポートは全てWord、卒論もWordで書いたほどでした。Markdownに切り替えてからはエディタのダウンを恐れることも、文書の最新版を探す必要もなくなり、非常にストレスフリーに文書作成ができるようになりました。ぜひ、Markdownでレポート書く環境を一度整えてみてはいかがでしょうか？
-

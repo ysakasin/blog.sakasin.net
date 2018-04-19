@@ -7,7 +7,7 @@ description: Umiは、日本語も美しく表示できるBootstrapテーマで�
 ---
 このエントリーは [Bootstrap Advent Calendar 2015](http://qiita.com/advent-calendar/2015/bootstrap) 15日目のエントリーです。
 
-[Umi](https://nkmr6194.github.io/Umi/)は、日本語も美しく表示できるBootstrapテーマである[Honoka](http://honokak.osaka/)のフォークテーマです。このテーマは私が運営しているサイトをHonoka移行したいという目的を持って作成しました。このWebサイトも2015/12/15現在はUmiを使っています。
+[Umi](https://ysakasin.github.io/Umi/)は、日本語も美しく表示できるBootstrapテーマである[Honoka](http://honokak.osaka/)のフォークテーマです。このテーマは私が運営しているサイトをHonoka移行したいという目的を持って作成しました。このWebサイトも2015/12/15現在はUmiを使っています。
 
 Honokaの紹介はAdvent Calenderの他の記事やHonokaプロダクトサイトに任せるとします。
 
@@ -31,7 +31,7 @@ Honokaが世に出た時、自分は[Proconist.net](https://proconist.net)とい
 
 「……これは？！」
 
-ﾎﾉｶﾁｬﾝ！⊂(・８・)⊃  
+ﾎﾉｶﾁｬﾝ！⊂(・８・)⊃
 ｳﾐﾁｬﾝ！⊂(・８・)⊃
 
 という神（作者）からの天啓を受けて、Bootswatch Flatlyで主に使われている **深い紺色からイメージ** し、 **Umi** という名前のHonokaフォークを作ることにしました。
@@ -79,7 +79,7 @@ HonokaのプロダクトサイトはGitHubリポジトリ上で公開/管理さ�
 
 **UmiのCSSを読み込む** <small>おわり</small>
 
-本当にそれだけです。UmiやHonokaはBootstrapのフォークテーマであり互換性が非常に高いので本当にこれだけです。[コミットログ](https://github.com/NKMR6194/proconist.net/commit/3616120019c70aa6c5331ccb8512d1a0db219c68)もそれを示してくれています。
+本当にそれだけです。UmiやHonokaはBootstrapのフォークテーマであり互換性が非常に高いので本当にこれだけです。[コミットログ](https://github.com/ysakasin/proconist.net/commit/3616120019c70aa6c5331ccb8512d1a0db219c68)もそれを示してくれています。
 
 
 ## Umiをメンテナンスする
@@ -110,4 +110,3 @@ Honokaという素晴らしいプロダクトを作ってくださり、Honoka�
 ## P.S.
 
 Honoka, Umi, [Nico](http://kubosho.github.io/Nico/)に続くテーマを作るのはあなただ！！！
-

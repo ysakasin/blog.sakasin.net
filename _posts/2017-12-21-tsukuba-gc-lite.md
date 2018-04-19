@@ -10,11 +10,11 @@ description: つくば市のごみ収集カレンダーを確認しやすくす�
 
 では本題。
 
-ちょうど一年ほど前、[つくば市のごみ収集カレンダーをJSON化するツールを作った #正月ハッカソン](https://qiita.com/sakasin/items/eb3117a636b26bd2e3d7) というのをやりました。これの成果物である[tsukuba-gc](https://github.com/NKMR6194/tsukuba-gc)ではつくば市が配布しているごみ収集カレンダーのpdfを入力として、色と配置を元に日程をJSONにして出力することができるようになりました。その時には一旦の成功を迎えたのですが、年度が切り替わって新しいpdfを投入したところ、全くデタラメな結果を出力するようになってしまいました。これはどうにかしなきゃいけないとと思って、いろいろ考え直すことにしました。
+ちょうど一年ほど前、[つくば市のごみ収集カレンダーをJSON化するツールを作った #正月ハッカソン](https://qiita.com/sakasin/items/eb3117a636b26bd2e3d7) というのをやりました。これの成果物である[tsukuba-gc](https://github.com/ysakasin/tsukuba-gc)ではつくば市が配布しているごみ収集カレンダーのpdfを入力として、色と配置を元に日程をJSONにして出力することができるようになりました。その時には一旦の成功を迎えたのですが、年度が切り替わって新しいpdfを投入したところ、全くデタラメな結果を出力するようになってしまいました。これはどうにかしなきゃいけないとと思って、いろいろ考え直すことにしました。
 
 結果として、規則を元にicsを出力するtsukuba-gc-liteというRubyスクリプトを作りました。
 
-[NKMR6194/tsukuba-gc-lite - GitHub](https://github.com/NKMR6194/tsukuba-gc-lite)
+[ysakasin/tsukuba-gc-lite - GitHub](https://github.com/ysakasin/tsukuba-gc-lite)
 
 
 ## 顧客が本当に必要だったもの：周期性
@@ -23,9 +23,9 @@ description: つくば市のごみ収集カレンダーを確認しやすくす�
 
 なぜそもそも自動で検知したかったのかというと、つくば市のごみ収集の日程にはごくたまに例外が発生するからです。基本的に２週間周期で回収の品目が巡っているものの、年末年始や月末に回収なしがあったり、燃えるゴミの日に変わっていたりします。しかし、よくよく考えてみると、これらの例外は回収品目が上書きされるだけなので、周期がずれたりしません。そうしたら周期と例外を事前に知っておけば、比較的簡単に日程表を生成できることになります。
 
-[tsukuba-gc-lite](https://github.com/NKMR6194/tsukuba-gc-lite)ではこの周期と例外に着目したスクリプトになっています。以下のように収集品目のサイクルと例外を記述したファイルを用意して、それを元に日程の一覧を生成するようにしました。
+[tsukuba-gc-lite](https://github.com/ysakasin/tsukuba-gc-lite)ではこの周期と例外に着目したスクリプトになっています。以下のように収集品目のサイクルと例外を記述したファイルを用意して、それを元に日程の一覧を生成するようにしました。
 
-[tsukuba-gc-lite/seed/2017east.json](https://github.com/NKMR6194/tsukuba-gc-lite/blob/master/seed/2017east.json)
+[tsukuba-gc-lite/seed/2017east.json](https://github.com/ysakasin/tsukuba-gc-lite/blob/master/seed/2017east.json)
 ```json
 {
   "year": 2017,
@@ -77,11 +77,3 @@ Webサイトを整備したいです。生成したファイルに簡単にリ�
 こうすると、各々のカレンダーアプリケーションに `east.ics` をsubscribeするように設定しておくだけで、ユーザーからすると毎年更新されるという便利なことが実現できます。
 
 私はあと１年ほどでつくばを去ることになるので、次世代に引き継ぎとかできたらいいなーと思っています。我こそは！ という方がいたら、ぜひ声をかけてください。
-
-
-
-
-
-
-
-
