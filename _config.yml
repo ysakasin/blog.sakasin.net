@@ -28,3 +28,8 @@ exclude:
   - vendor/gems/
   - vendor/ruby/
   - LICENSE
+  - package.json
+  - scripts
+  - .textlintrc
+  - package.json
+  - package-lock.json

@@ -3,3 +3,5 @@ _site
 .jekyll-metadata
 .bundle
 vendor
+node_modules
+package-lock.json
