@@ -146,3 +146,17 @@ code.highlighter-rouge {
   font-size: 85%;
   border-radius: 3px;
 }
+
+table {
+  border-spacing: 0;
+}
+
+th{
+  padding: 0.5rem 1rem;
+  font-size: 16px;
+}
+td {
+  padding: 0.5rem 1rem;
+  font-size: 24px;
+  border-top: 1px solid #555;
+}
