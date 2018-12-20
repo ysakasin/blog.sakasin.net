@@ -6,7 +6,7 @@ slug: attidute-to-trpg
 description: シナリオライティングをする上でふと気になった、TRPG性という概念についてのエッセイ
 ---
 
-この記事は [TRPG なんでも Advent Calendar 2018](https://adventar.org/calendars/2901) 21日目のエントリーです。前日担当はkuroa1016さんで、["ここに記事のタイトルを入れる"](http://example.com)でした。
+この記事は [TRPG なんでも Advent Calendar 2018](https://adventar.org/calendars/2901) 21日目のエントリーです。前日担当はkuroa1016さんで、["『ソードワールドを遊びつくそう！』を設立した話"](https://kakuyomu.jp/works/1177354054887883603/episodes/1177354054887894989)でした。
 
 この記事は、私がTRPGのシナリオを作るうえで考えるようになった**TRPG性**についてのエッセイです。
 私が感じたことをつらつらと書き下しているだけなので、結論と呼べるものはないです。その点はご容赦ください。
