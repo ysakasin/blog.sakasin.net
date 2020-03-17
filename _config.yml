@@ -1,9 +1,9 @@
 title: Sinji's View
-email: sinji@sakasin.net
+email: ysakasin@gmail.com
 description: >-
   酒田　シンジが気になったことをテキトーに書くブログ
-baseurl: "/blog" # the subpath of your site, e.g. /blog
-url: "https://sakasin.net"
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://blog.sakasin.net"
 twitter: ysakasin
 github: ysakasin
 permalink: /:title

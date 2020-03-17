@@ -24,7 +24,7 @@ Androidアプリ開発をはじめたので、個人的なTipsを随時載せて
 
 <script src="https://gist.github.com/ysakasin/cefade2e7936fedcf8fb.js"></script>
 
-![Android_Button_Sample](/uploads/Android_Button_Sample.png)
+![Android_Button_Sample](/image/Android_Button_Sample.png)
 
 このような書き方だと、画面サイズによらず、決まった数を画面いっぱい格子状に並べることができます。
 

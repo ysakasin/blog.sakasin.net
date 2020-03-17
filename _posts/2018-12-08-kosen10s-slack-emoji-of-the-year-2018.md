@@ -8,7 +8,7 @@ description: 2018年最強のemojiが今、決まる
 
 kosen10s Advent Calendar 2018を購読している皆様、またお目にかかります。昨日に引き続き、本日も酒田が担当いたします。
 
-本エントリーは [#kosen10s Advent Calendar 2018](https://adventar.org/calendars/3004) 8日目のエントリーです。前日の記事は、["オセロの完全解析を解説する"](https://sakasin.net/blog/solving-othello)でした。
+本エントリーは [#kosen10s Advent Calendar 2018](https://adventar.org/calendars/3004) 8日目のエントリーです。前日の記事は、["オセロの完全解析を解説する"](/solving-othello)でした。
 
 では本題に移りましょう。今ここに、kosen10s Slack Emoji of the year 2018の授賞式を開催します！
 
