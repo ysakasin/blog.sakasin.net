@@ -55,7 +55,7 @@ IRCボット「ボーンズ＆カーズ」がリリースされる
 ## 2008/07/05
 どどんとふが作られ始める
 
-- READMEにはDnDMapFrontierの略だと書いてあるが、本当はおそらくDnD Map Tool Frontierだと思われる。
+- READMEにはDnDMapFrontierの略だと書いてあるが、本当はおそらくDnD Map Tool Flash/Frontierだと思われる。
   - [README「名前の由来」](https://github.com/torgtaitai/DodontoF#%E5%90%8D%E5%89%8D%E3%81%AE%E7%94%B1%E6%9D%A5%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6)
 
 ## 2008/11/19
